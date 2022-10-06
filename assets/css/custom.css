@@ -1792,6 +1792,13 @@ body.dark .horizontal-filter-item ul li {
   border-color: #505050;
 }
 
+body.dark .fixed-option-c {
+  border-color: #3c3c3c;
+}
+body.dark #progressBar svg path {
+  stroke: #fff;
+}
+
 @media (max-width: 768px) {
   .navbar-brand {
     text-transform: uppercase;
