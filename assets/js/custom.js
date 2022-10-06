@@ -3,10 +3,23 @@
 
 const checkbox = document.getElementById("checkbox")
 
-checkbox.addEventListener("change", () => {
-  document.body.classList.toggle("dark")
+document.addEventListener("DOMContentLoaded", () => {
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark")
+  } else {
+    localStorage.setItem("theme", "light")
+  }
 })
-//
+checkbox.addEventListener("change", () => {
+  if (document.body.classList.contains("dark")) {
+    document.body.classList.remove("dark")
+    localStorage.setItem("theme", "light")
+  } else {
+    document.body.classList.add("dark")
+    localStorage.setItem("theme", "dark")
+  }
+})
+
 var btn = $("#button")
 
 $(window).scroll(function () {
