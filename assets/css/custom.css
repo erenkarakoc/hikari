@@ -1196,6 +1196,18 @@ body .text-gray {
   background: transparent !important;
   box-shadow: none !important;
 }
+@media (max-width: 768px) {
+  .headroom--top {
+    padding: 0;
+    background-color: #fff;
+  }
+  #header {
+    background-color: var(--background) !important;
+  }
+  #header::before {
+    display: none;
+  }
+}
 .headroom--top::before {
   opacity: 1 !important;
 }
