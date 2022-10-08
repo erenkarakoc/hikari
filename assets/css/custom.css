@@ -1170,72 +1170,62 @@ body .text-gray {
 }
 
 /* eren */
-#header {
-  transition: all 0.2s ease-out;
-  z-index: 2147483645;
-}
-#header::before {
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.7));
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  opacity: 0;
-  z-index: -1;
-}
-.hikari-logo {
-  background-color: transparent !important;
-}
-.headroom--top {
-  padding: 35px;
-  background: transparent !important;
-  box-shadow: none !important;
-}
-@media (max-width: 768px) {
-  .headroom--top {
-    padding: 0;
-    background-color: #fff;
-  }
+@media (min-width: 768px) {
   #header {
-    background-color: var(--background) !important;
+    transition: all 0.2s ease-out;
+    z-index: 2147483645;
   }
   #header::before {
-    display: none;
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.7));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    opacity: 0;
+    z-index: -1;
   }
-}
-.headroom--top::before {
-  opacity: 1 !important;
-}
-.headroom--top .hikari-logo {
-  background-color: transparent;
-}
-.headroom--top .hikari-logo span,
-.headroom--top .hikari-logo path {
-  color: #fff;
-}
-.headroom--top .nav-link {
-  color: #fff !important;
-}
-.headroom--top .la-user-circle {
-  color: #fff;
-}
-.headroom--top .label {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-body.dark .headroom--top .ball {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-body.dark .headroom--top .la-moon {
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-body.dark .headroom--top .la-sun {
-  color: rgba(255, 255, 255, 0.8) !important;
-  z-index: 9;
+  .hikari-logo {
+    background-color: transparent !important;
+  }
+  .headroom--top {
+    padding: 35px;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  .headroom--top::before {
+    opacity: 1 !important;
+  }
+  .headroom--top .hikari-logo {
+    background-color: transparent;
+  }
+  .headroom--top .hikari-logo span,
+  .headroom--top .hikari-logo path {
+    color: #fff;
+  }
+  .headroom--top .nav-link {
+    color: #fff !important;
+  }
+  .headroom--top .la-user-circle {
+    color: #fff;
+  }
+  .headroom--top .label {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  body.dark .headroom--top .ball {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  body.dark .headroom--top .la-moon {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  body.dark .headroom--top .la-sun {
+    color: rgba(255, 255, 255, 0.8) !important;
+    z-index: 9;
+  }
 }
 
 .hero-slide-item {
